@@ -65,6 +65,8 @@ namespace _Code.Gameloop.Pickup
 
         public void PickUp()
         {
+            if (_currentDetectionObject == null)
+                return;
             _currentPickUpObject = _currentDetectionObject;
             _currentPickUpObject.Select();
             _currentPickUpObject.transform.parent = pickUpTransform;
@@ -74,8 +76,10 @@ namespace _Code.Gameloop.Pickup
 
         void Drop()
         {
+            if (_currentPickUpObject == null)
+                return;
             _currentPickUpObject.transform.parent = null;
-            _currentPickUpObject.UnSelect(dropForce);
+            _currentPickUpObject.UnSelect(new Vector2(dropForce * Direction, dropForce));
             _currentPickUpObject = null;
         }
     }

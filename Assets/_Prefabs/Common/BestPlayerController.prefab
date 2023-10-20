@@ -29689,8 +29689,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickUpTransform: {fileID: 8384774240855282540}
+  pickUpDistance: 0.5
   distanceDetection: 1
   flipRenderer: {fileID: 3391041333617101506}
+  dropForce: 25000
 --- !u!1 &6882413849988256385
 GameObject:
   m_ObjectHideFlags: 0

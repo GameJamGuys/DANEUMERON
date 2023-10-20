@@ -22,11 +22,11 @@ namespace _Code.Gameloop.Pickup
             _collider.enabled = false;
         }
 
-        public void UnSelect(float force)
+        public void UnSelect(Vector2 force)
         {
             _rb.isKinematic = false;
-            _rb.AddForce(new Vector2(1,.5f)*force);
-            StartCoroutine(WaitAndEnableCollider(.2f));
+            _rb.AddForce(force);
+            StartCoroutine(WaitAndEnableCollider(.1f));
         }
 
         IEnumerator WaitAndEnableCollider(float time)
