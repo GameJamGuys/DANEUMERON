@@ -35,7 +35,7 @@ namespace _Code.Gameloop.Triggers
                 _lastVelocity = -rb.velocity.y;
                 _lastVelocity = Mathf.Clamp(_lastVelocity, minForce, maxForce);
                 _lastVelocity *= scale;
-                Debug.Log(_lastVelocity);
+                // Debug.Log(_lastVelocity);
             }
         }
     }

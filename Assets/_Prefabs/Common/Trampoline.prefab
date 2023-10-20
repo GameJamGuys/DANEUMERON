@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scale: 1.5
-  minForce: 5
+  minForce: 10
   maxForce: 15
 --- !u!212 &1055120424434143338
 SpriteRenderer:
