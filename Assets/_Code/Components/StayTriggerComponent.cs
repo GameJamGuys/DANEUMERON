@@ -9,6 +9,18 @@ namespace _Code.Components
         [SerializeField] private new string tag;
         [SerializeField] private GameObjectChange actionStay;
 
+        public string Tag
+        {
+            get => tag;
+            set => tag = value;
+        }
+
+        public GameObjectChange ActionStay
+        {
+            get => actionStay;
+            set => actionStay = value;
+        }
+
         private void OnTriggerStay2D(Collider2D other)
         {
             if (other.gameObject.CompareTag(tag))
