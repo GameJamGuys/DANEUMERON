@@ -11,7 +11,7 @@ namespace _Code.Gameloop.Pickup
         [SerializeField][Range(0.1f,1)] private float pickUpDistance =.5f;
         [SerializeField] private float distanceDetection = 1f;
         [SerializeField] private SpriteRenderer flipRenderer;
-        [SerializeField] private float dropForce = 500;
+        [SerializeField] private Vector2 dropForce = new Vector2(25000,25000);
         
         private PickupObject _currentPickUpObject;
         private PickupObject _currentDetectionObject;
@@ -34,7 +34,6 @@ namespace _Code.Gameloop.Pickup
                 if (hit.transform.TryGetComponent<PickupObject>(out var pickupObject))
                 {
                     _currentDetectionObject = pickupObject;
-                    Debug.Log("pickup detected");
                 }
                 else
                     _currentDetectionObject = null;
@@ -79,7 +78,7 @@ namespace _Code.Gameloop.Pickup
             if (_currentPickUpObject == null)
                 return;
             _currentPickUpObject.transform.parent = null;
-            _currentPickUpObject.UnSelect(new Vector2(dropForce * Direction, dropForce));
+            _currentPickUpObject.UnSelect(new Vector2(dropForce.x * Direction, dropForce.y));
             _currentPickUpObject = null;
         }
     }
