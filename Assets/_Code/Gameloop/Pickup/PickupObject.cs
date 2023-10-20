@@ -26,7 +26,7 @@ namespace _Code.Gameloop.Pickup
         {
             _rb.isKinematic = false;
             _rb.AddForce(force);
-            StartCoroutine(WaitAndEnableCollider(.1f));
+            StartCoroutine(WaitAndEnableCollider(.01f));
         }
 
         IEnumerator WaitAndEnableCollider(float time)
