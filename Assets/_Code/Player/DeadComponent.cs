@@ -6,13 +6,12 @@ namespace _Code
 {
     public class DeadComponent : MonoBehaviour
     {
-        [SerializeField]
-        private PlayerAnimator _anim;
+        [SerializeField] private PlayerAnimator anim;
 
         public void Dead()
         {
             print("Player dead");
-            _anim.OnDead();
+            anim.OnDead();
             LevelManager.Instance.EndLevel();
         }
 

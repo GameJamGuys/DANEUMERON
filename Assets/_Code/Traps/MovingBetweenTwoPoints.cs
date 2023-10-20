@@ -9,35 +9,64 @@ namespace _Code.Traps
         [SerializeField] private Transform transformToMove;
         [SerializeField] private Transform firstPoint;
         [SerializeField] private Transform secondPoint;
-        [SerializeField] private float duration = 5;
+        [SerializeField] private float speed = 5;
+        [SerializeField] private bool moveOnStart = true;
 
         private Tween _currentTween;
-        private Transform _nextPoint;
-        
+        private Transform _currentPoint;
+
         private void Start()
         {
-            _nextPoint = firstPoint;
-            MoveToNextPoint(_nextPoint);
+            _currentPoint = firstPoint;
+            if (moveOnStart)
+            {
+                MoveToNextPointLoop();
+            }
         }
 
-        private void MoveToNextPoint(Transform nextPoint)
+        public void MoveToNextPointLoop()
         {
             //Проверка на активность твина
-            if (_currentTween is {active: true}) DOTween.Kill(_currentTween);
+            if (_currentTween is {active: true}) _currentTween.Kill();
+
+            //Движение к текущей точке по скорости
+            var distance = Vector3.Distance(transformToMove.position, _currentPoint.position);
+            var duration = (distance / speed);
+            _currentTween = transformToMove.DOMove(_currentPoint.position, duration).SetEase(Ease.OutSine);
 
             //Выставление следующей точки (к которой будем производить движение)
-            if (_nextPoint == firstPoint)
+            if (_currentPoint == firstPoint)
             {
-                _nextPoint = secondPoint;
+                _currentPoint = secondPoint;
             }
             else
             {
-                _nextPoint = firstPoint;
+                _currentPoint = firstPoint;
             }
-            
-            //Движение к текущей точке и в завершении - движение к следующей
-            _currentTween = transformToMove.DOMove(nextPoint.position, duration).SetEase(Ease.OutSine);
-            _currentTween.onComplete = (() => MoveToNextPoint(_nextPoint));
+
+            //Движение к следующей точке по завершению твина (луп)
+            _currentTween.onComplete = (() => MoveToNextPointLoop());
+        }
+
+        public void MoveToNextPointOneTime()
+        {
+            //Проверка на активность твина
+            if (_currentTween is {active: true}) _currentTween.Kill();
+
+            //Движение к текущей точке по скорости
+            var distance = Vector3.Distance(transformToMove.position, _currentPoint.position);
+            var duration = (distance / speed);
+            _currentTween = transformToMove.DOMove(_currentPoint.position, duration).SetEase(Ease.OutSine);
+
+            //Выставление следующей точки (к которой будем производить движение)
+            if (_currentPoint == firstPoint)
+            {
+                _currentPoint = secondPoint;
+            }
+            else
+            {
+                _currentPoint = firstPoint;
+            }
         }
     }
 }
