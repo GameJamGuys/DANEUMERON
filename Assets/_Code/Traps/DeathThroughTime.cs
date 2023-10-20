@@ -5,7 +5,7 @@ using UnityEngine;
 namespace _Code.Traps
 {
     [RequireComponent(typeof(StayTriggerComponent))]
-    [RequireComponent(typeof(ExitTriggerComponent))]
+    [RequireComponent(typeof(EnterTriggerComponent))]
     public class DeathThroughTime : MonoBehaviour
     {
         [SerializeField] private float timeInSeconds = 5;

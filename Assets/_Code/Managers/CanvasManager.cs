@@ -4,6 +4,7 @@ using Cysharp.Threading.Tasks;
 using UnityEngine;
 using Tools;
 
+[DefaultExecutionOrder(-2)]
 public class CanvasManager : StaticInstance<CanvasManager>
 {
     [SerializeField]
@@ -16,7 +17,7 @@ public class CanvasManager : StaticInstance<CanvasManager>
 
     private void OnDisable()
     {
-        LevelManager.Instance.OnLevelEnd -= ShowEndScreen;
+        //LevelManager.Instance.OnLevelEnd -= ShowEndScreen;
     }
 
     private async void ShowEndScreen()
