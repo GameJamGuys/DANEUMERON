@@ -11,9 +11,10 @@ namespace _Code
 
         public void Dead()
         {
+            print("Player dead");
             _anim.OnDead();
+            LevelManager.Instance.EndLevel();
         }
-
 
     }
 }

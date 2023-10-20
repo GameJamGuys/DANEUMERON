@@ -1,18 +1,15 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LevelManager : StaticInstance<LevelManager>
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public event Action OnLevelEnd;
+
+
+    public void EndLevel()
     {
-        
+        OnLevelEnd?.Invoke();
     }
 }
