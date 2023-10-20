@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4e20c19b0f8b74620ae8575be4250b79
+guid: fc01c7167cfa44c1dbb608552b489712
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Azonix
+  - Public Pixel
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
