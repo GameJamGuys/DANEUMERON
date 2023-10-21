@@ -1,4 +1,5 @@
 ﻿using System;
+using Audio;
 using DG.Tweening;
 using UnityEngine;
 
@@ -20,6 +21,7 @@ namespace _Code.Gameloop.Triggers
 
         public void Broke()
         {
+            AudioBox.Instance.Play("Glass");
             Destroy(gameObject);
         }
     }

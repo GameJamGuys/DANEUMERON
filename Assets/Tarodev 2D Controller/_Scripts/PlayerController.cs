@@ -1,6 +1,8 @@
 using System;
 using _Code.Gameloop.Triggers;
+using Audio;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace TarodevController
 {
@@ -143,6 +145,10 @@ namespace TarodevController
 
         private void ExecuteJump()
         {
+            
+            string[] sounds = new[] { "Jump1", "Jump2", "Jump3", "Jump4"};
+            string sound = sounds[Random.Range(0, sounds.Length)];
+            AudioBox.Instance.Play(sound );
             _endedJumpEarly = false;
             _timeJumpWasPressed = 0;
             _bufferedJumpUsable = false;
