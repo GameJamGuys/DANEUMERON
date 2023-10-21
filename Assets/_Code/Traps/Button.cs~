@@ -10,15 +10,13 @@ namespace _Code.Traps
 
         private void Select()
         {
-            anim.Play("Down");
-
+            anim.Play("Up");
             Interact();
         }
 
         private void Deselect()
         {
-            anim.Play("Up");
-            
+            anim.Play("Down");
             Interact();
         }
 

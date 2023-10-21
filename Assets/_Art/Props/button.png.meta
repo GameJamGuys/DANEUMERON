@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4bd9a231932264713a241fee408f885a
+guid: 6a3f32963eca2454583d02592d190836
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,22 +123,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: box_long_0
+      name: button_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 16
-        width: 46
-        height: 20
+        x: 19
+        y: 6
+        width: 10
+        height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 15, y: 4, z: 16, w: 4}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 1, w: 1}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2241ee84a3b24c9caad978f8a2e8e2d
-      internalID: -459493265
+      spriteID: fd4789c730fe64b36a9d222be6c9d021
+      internalID: -676325168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: button_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 14
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 0, z: 2, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b35a58e8903b445c9ae4615004f4487
+      internalID: 1925209930
       vertices: []
       indices: 
       edges: []
@@ -154,7 +175,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      box_long_0: -459493265
+      button_0: -676325168
+      button_1: 1925209930
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
