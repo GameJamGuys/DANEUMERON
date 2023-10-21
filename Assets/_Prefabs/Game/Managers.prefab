@@ -74,8 +74,8 @@ MonoBehaviour:
   settings:
     isSound: 1
     isMusic: 1
-    MusicVolume: 0
-    SoundVolume: 0
+    MusicVolume: 0.358
+    SoundVolume: 0.572
   musics:
   - name: m1
     clip: {fileID: 8300000, guid: c11f1fed259177c4187b9d319e6dc241, type: 3}
@@ -118,7 +118,7 @@ MonoBehaviour:
     unstop: 0
     source: {fileID: 0}
   - name: mF
-    clip: {fileID: 8300000, guid: 24019a4c022d442eeae012e1dfcb0b4c, type: 3}
+    clip: {fileID: 8300000, guid: 5382e089bdaf1954f943267bbf631251, type: 3}
     volume: 1
     pitch: 1
     loop: 1
@@ -128,8 +128,8 @@ MonoBehaviour:
   sounds:
   - name: Type
     clip: {fileID: 8300000, guid: 03c2e660cb6fcda4ab13ca37fa666f43, type: 3}
-    volume: 1
-    pitch: 1.11
+    volume: 0.224
+    pitch: 1
     loop: 0
     fullPlay: 0
     unstop: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
   - name: Tramp1
     clip: {fileID: 8300000, guid: 41053d9ef295e514194d71cc7c514604, type: 3}
     volume: 1
-    pitch: 1.11
+    pitch: 1
     loop: 0
     fullPlay: 0
     unstop: 0
@@ -145,7 +145,7 @@ MonoBehaviour:
   - name: Tramp2
     clip: {fileID: 8300000, guid: 8ec538fc29b038e4c856de57a4f9f29a, type: 3}
     volume: 1
-    pitch: 1.11
+    pitch: 1
     loop: 0
     fullPlay: 0
     unstop: 0
@@ -153,7 +153,111 @@ MonoBehaviour:
   - name: Tramp3
     clip: {fileID: 8300000, guid: 54073aea1d34cd1489d14162b1c4c52e, type: 3}
     volume: 1
-    pitch: 1.11
+    pitch: 1
+    loop: 0
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
+  - name: Btn
+    clip: {fileID: 8300000, guid: 37a3ad88e4b4fca458edfda90cfa1478, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
+  - name: Glass
+    clip: {fileID: 8300000, guid: 7103222186b13cc459e4c71a55f1ecc6, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
+  - name: Death
+    clip: {fileID: 8300000, guid: d80417f89777dd549999f66bc1e8e71c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
+  - name: Box1
+    clip: {fileID: 8300000, guid: 2ab46c9cf9505134797f0ba53dd5f016, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
+  - name: Box2
+    clip: {fileID: 8300000, guid: 42ab2497b89a8834e9f37d288581cd97, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
+  - name: Box3
+    clip: {fileID: 8300000, guid: ae3d37d5329e4bf4b87a11996903a938, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
+  - name: Box4
+    clip: {fileID: 8300000, guid: 78b26f50964a5134aaf359d2c2c7ae7b, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
+  - name: Fitil
+    clip: {fileID: 8300000, guid: e93624eb77a9ad64bbf877c9480fa8e3, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
+  - name: Exp
+    clip: {fileID: 8300000, guid: 8b1ae64dbe41cf34cbdd2b8dee042fbf, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
+  - name: Jump1
+    clip: {fileID: 8300000, guid: fbe1e7e6075e94affabd4ead3636d783, type: 3}
+    volume: 2
+    pitch: 1
+    loop: 0
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
+  - name: Jump2
+    clip: {fileID: 8300000, guid: 12a34debc4e10418fbc0131b8e9e40b4, type: 3}
+    volume: 2
+    pitch: 1
+    loop: 0
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
+  - name: Jump3
+    clip: {fileID: 8300000, guid: 4f56510737ccf40afa267e52f1826e9a, type: 3}
+    volume: 2
+    pitch: 1
+    loop: 0
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
+  - name: Jump4
+    clip: {fileID: 8300000, guid: 34e44b29bccad485cb334a585bb35252, type: 3}
+    volume: 2
+    pitch: 1
     loop: 0
     fullPlay: 0
     unstop: 0
