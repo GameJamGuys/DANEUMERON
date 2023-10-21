@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace _Code.Gameloop.Triggers
 {
-    public class Teleportable : MonoBehaviour
+    public class Teleportable : ButtonPresser
     {
         protected bool _enable = true;
         public bool Enable => _enable;
