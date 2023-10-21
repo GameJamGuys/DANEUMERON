@@ -1,4 +1,5 @@
 using System;
+using _Code.Gameloop.Triggers;
 using UnityEngine;
 
 namespace TarodevController
@@ -11,8 +12,9 @@ namespace TarodevController
     /// If you hve any questions or would like to brag about your score, come to discord: https://discord.gg/tarodev
     /// </summary>
     [RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
-    public class PlayerController : MonoBehaviour, IPlayerController
+    public class PlayerController : Teleportable, IPlayerController
     {
+        
         [SerializeField] private ScriptableStats _stats;
         private Rigidbody2D _rb;
         private CapsuleCollider2D _col;
@@ -145,6 +147,17 @@ namespace TarodevController
             _bufferedJumpUsable = false;
             _coyoteUsable = false;
             _frameVelocity.y = _stats.JumpPower;
+            Jumped?.Invoke();
+        }
+
+        public void TrampolineJump(float jumpPower)
+        {
+            
+            _endedJumpEarly = false;
+            _timeJumpWasPressed = 0;
+            _bufferedJumpUsable = false;
+            _coyoteUsable = false;
+            _frameVelocity.y = jumpPower;
             Jumped?.Invoke();
         }
 

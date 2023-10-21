@@ -10,14 +10,22 @@ namespace _Code.Traps
 
         private void Select()
         {
-            anim.Play("Up");
-            objectToInteraction.Interact();
+            anim.Play("Down");
+
+            Interact();
         }
 
         private void Deselect()
         {
-            anim.Play("Down");
-            objectToInteraction.Interact();
+            anim.Play("Up");
+            
+            Interact();
+        }
+
+        private void Interact()
+        {
+            if(objectToInteraction != null)
+                objectToInteraction.Interact();
         }
 
         private void OnTriggerEnter2D(Collider2D other)
