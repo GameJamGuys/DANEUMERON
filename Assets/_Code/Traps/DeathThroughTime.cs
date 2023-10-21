@@ -12,6 +12,7 @@ namespace _Code.Traps
         [SerializeField] private string touchingTag = "Player";
         
         private Cooldown _cooldown;
+        private bool _isWorked;
         private StayTriggerComponent _stayTriggerComponent;
         private EnterTriggerComponent _enterTriggerComponent;
         
@@ -35,11 +36,12 @@ namespace _Code.Traps
         //Метод, вызываемый при смерти объекта при взаимодействии за время timeInSeconds
         private void DeadAfterTime(GameObject dyingObject)
         {
-            if (_cooldown.IsReady)
+            if (_cooldown.IsReady && !_isWorked)
             {
                 if (dyingObject != null)
                 {
                     dyingObject.GetComponent<DeadComponent>().Dead();
+                    _isWorked = true;
                 }
                 
                 _cooldown.Reset();
