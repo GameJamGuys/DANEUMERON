@@ -247,6 +247,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2417025104210531898, guid: 791849ec647dd45749f223a4aed88a0b, type: 3}
+      propertyPath: m_Size.x
+      value: 2.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417025104210531898, guid: 791849ec647dd45749f223a4aed88a0b, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417025104210531898, guid: 791849ec647dd45749f223a4aed88a0b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a4053d6870c9ddd4e9cfa5e0d5706692, type: 3}
+    - target: {fileID: 2417025104210531898, guid: 791849ec647dd45749f223a4aed88a0b, type: 3}
+      propertyPath: m_SortingOrder
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2417025104210531898, guid: 791849ec647dd45749f223a4aed88a0b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2443154258933413216, guid: 791849ec647dd45749f223a4aed88a0b, type: 3}
       propertyPath: m_Name
       value: CatEyes
