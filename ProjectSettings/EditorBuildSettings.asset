@@ -9,11 +9,29 @@ EditorBuildSettings:
     path: Assets/_Scenes/Base/Menu.unity
     guid: 99da602c5c62247adb2a124cecec5d1d
   - enabled: 1
-    path: Assets/_Scenes/Levels/Level1.unity
-    guid: 116387e8efff93745b4b5a7471b0982e
+    path: Assets/_Scenes/Levels/Final1.unity
+    guid: 36b2196580a7446029a35635f58bb6f4
   - enabled: 1
-    path: Assets/_Scenes/Levels/Level2.unity
-    guid: 8c9e253bb4c964097bb2248bcf1252d4
+    path: Assets/_Scenes/Levels/Final2.unity
+    guid: 2ed7fd53642854f96974e5d56ef30652
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Final3.unity
+    guid: 97f26a7ab2310474d8df49f8155ec8fc
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Final4.unity
+    guid: cc29de79423954fb8a583ee92598bc1d
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Final5.unity
+    guid: 82dd0ca95eff84be6806fdab651831ef
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Final6.unity
+    guid: bba131f0e52ae4a09abd1deb47428fda
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Final7.unity
+    guid: a4344a577255841e6aa35dbc9158109a
+  - enabled: 1
+    path: Assets/_Scenes/Levels/Final8.unity
+    guid: b427ea340f70a4fed8efd5643209f7dc
   - enabled: 1
     path: Assets/_Scenes/Base/FinalBoss.unity
     guid: 6bb5a7896e0c54d8fac8658011bc2377
