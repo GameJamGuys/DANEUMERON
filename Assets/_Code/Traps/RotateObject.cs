@@ -33,7 +33,7 @@ namespace _Code.Traps
 
             //var distance = Vector3.Distance(transformToRotation.position, newPositionObj.transform.position);
             //var duration = (distance / speed);
-            _currentTween = transformToRotation.DORotate(new Vector3(0, 0, _currentDegree), duration).SetEase(Ease.OutSine);
+            _currentTween = transformToRotation.DOLocalRotate(new Vector3(0, 0, _currentDegree), duration).SetEase(Ease.OutSine);
 
             //Выставление следующего градуса
             if (_currentDegree == _startDegree)
@@ -58,7 +58,7 @@ namespace _Code.Traps
 
             //var distance = Vector3.Distance(transformToRotation.position, newPositionObj.transform.position);
             //var duration = (distance / speed);
-            _currentTween = transformToRotation.DORotate(new Vector3(0, 0, _currentDegree), duration).SetEase(Ease.OutSine);
+            _currentTween = transformToRotation.DOLocalRotate(new Vector3(0, 0, _currentDegree), duration).SetEase(Ease.OutSine);
 
             //Выставление следующего градуса
             if (_currentDegree == _startDegree)
@@ -86,7 +86,7 @@ namespace _Code.Traps
             }
             
             //Поворот по объекту по скорости
-            _currentTween = transformToRotation.DORotate(new Vector3(0, 0, _currentDegree), duration).SetEase(Ease.OutSine);
+            _currentTween = transformToRotation.DOLocalRotate(new Vector3(0, 0, _currentDegree), duration).SetEase(Ease.OutSine);
         }
 
         public void StopTween()
