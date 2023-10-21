@@ -1,6 +1,8 @@
 ﻿using System;
+using Audio;
 using TarodevController;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace _Code.Gameloop.Triggers
 {
@@ -9,13 +11,16 @@ namespace _Code.Gameloop.Triggers
         [SerializeField] float scale = 2;
         [SerializeField] private float minForce = 1;
         [SerializeField] private float maxForce = 3;
+        
 
         private Vector2 _lastVelocity;
         private void OnCollisionEnter2D(Collision2D col)
         {
             if (col.gameObject.TryGetComponent<Rigidbody2D>(out var rb))
             {
-                
+                string[] sounds = new[] { "Tramp1", "Tramp2", "Tramp3" };
+                string sound = sounds[Random.Range(0, sounds.Length)];
+                AudioBox.Instance.Play(sound );
                 if (col.gameObject.TryGetComponent<PlayerController>(out var playerController))
                 {
                     playerController.TrampolineJump(new Vector2(_lastVelocity.x,_lastVelocity.y*2) * transform.up);
