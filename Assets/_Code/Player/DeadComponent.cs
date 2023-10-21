@@ -19,6 +19,7 @@ namespace _Code
         public void Dead()
         {
             AudioBox.Instance.Play("Death");
+            AudioBox.Instance.Play("DeathMusic");
             print("Player dead");
             anim.OnDead();
             death.gameObject.SetActive(true);
