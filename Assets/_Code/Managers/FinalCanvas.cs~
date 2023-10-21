@@ -1,52 +1,44 @@
 using System.Collections;
 using System.Collections.Generic;
-using Audio;
-using Cysharp.Threading.Tasks;
+using UnityEngine;
 using DG.Tweening;
 using TMPro;
-using UnityEngine;
 using Tools;
 using UnityEngine.UI;
 
-[DefaultExecutionOrder(-2)]
-public class CanvasManager : StaticInstance<CanvasManager>
+public class FinalCanvas : MonoBehaviour
 {
     [SerializeField]
     private GameObject _endScreen;
-    // [Header("EndScreenDotween")]
-    [SerializeField] private Image background;
+
+    [SerializeField] private AudioSource audioSource;
+
     [SerializeField] private TextMeshProUGUI youDeathTmp;
     [SerializeField] private TextMeshProUGUI butTmp;
 
-    private void Start()
+    void Start()
     {
         LevelManager.Instance.OnLevelEnd += ShowEndScreen;
+
     }
 
-    private void OnDisable()
-    {
-        //LevelManager.Instance.OnLevelEnd -= ShowEndScreen;
-    }
-
-    private Sequence seq;
-    
-    private  void ShowEndScreen()
+    private void ShowEndScreen()
     {
         if (seq != null)
             return;
+
         youDeathTmp.text = "";
         butTmp.text = "";
-        background.color = new Color(0, 0, 0, 0);
         _endScreen.SetActive(true);
         seq = DOTween.Sequence();
         seq.AppendInterval(.5f);
         seq.Append(DOTween.ToAlpha(() => background.color, x => background.color = x, 1, .5f));
 
-        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Т", .15f).OnStart(() =>
+        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Д", .1f).OnStart(() =>
         {
             AudioBox.Instance.Play("Type");
         }));
-        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Ты", .15f).OnStart(() =>
+        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Да", .1f).OnStart(() =>
         {
             AudioBox.Instance.Play("Type");
         }));
@@ -70,7 +62,7 @@ public class CanvasManager : StaticInstance<CanvasManager>
         {
             AudioBox.Instance.Play("Type");
         }));
-        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Ты мёртв", .15f).OnStart(() =>
+        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "ДА НЕ УМЕР ОН", .15f).OnStart(() =>
         {
             AudioBox.Instance.Play("Type");
         }));
@@ -95,12 +87,10 @@ public class CanvasManager : StaticInstance<CanvasManager>
         {
             AudioBox.Instance.Play("Type");
         }));
-        
+
         seq.AppendInterval(.3f).OnComplete(() =>
         {
             SceneLoader.LoadNext();
         });
     }
-
-
 }
