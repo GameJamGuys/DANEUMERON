@@ -8,7 +8,7 @@ namespace _Code
     public class BombLogic : Teleportable
     {
         [SerializeField]
-        float boomTime = 5;
+        public float boomTime = 5;
         [Space]
         [SerializeField]
         TMP_Text timeText;
@@ -19,7 +19,7 @@ namespace _Code
 
         private void Start()
         {
-            timeText.text = boomTime.ToString();
+            timeText.text = ((int)boomTime).ToString();
             fitil.SetActive(false);
         }
 
