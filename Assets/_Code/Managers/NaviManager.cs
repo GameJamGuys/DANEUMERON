@@ -10,6 +10,11 @@ namespace Core.Managers
         [SerializeField]
         private bool lastLevel;
 
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+                ReloadLevel();
+        }
 
         public void BackToMenu()
         {
