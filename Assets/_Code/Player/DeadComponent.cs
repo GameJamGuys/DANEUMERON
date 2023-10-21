@@ -1,4 +1,5 @@
 ﻿using System;
+using Audio;
 using UnityEngine;
 using TarodevController;
 
@@ -17,6 +18,7 @@ namespace _Code
 
         public void Dead()
         {
+            AudioBox.Instance.Play("Death");
             print("Player dead");
             anim.OnDead();
             death.gameObject.SetActive(true);

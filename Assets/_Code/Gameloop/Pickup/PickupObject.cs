@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections;
 using _Code.Gameloop.Triggers;
+using Audio;
 using TarodevController;
 using UnityEngine;
+using Random = Unity.Mathematics.Random;
 
 namespace _Code.Gameloop.Pickup
 {
@@ -73,6 +75,16 @@ namespace _Code.Gameloop.Pickup
 
         private void OnCollisionEnter2D(Collision2D col)
         {
+            //
+            // if (_rb.velocity.magnitude > .1f)
+            // {
+                if (!col.gameObject.GetComponent<PlayerController>())
+                {
+                    string[] sounds = new[] { "Box1", "Box2", "Box3", "Box4" };
+                    string sound = sounds[UnityEngine.Random.Range(0, sounds.Length)];
+                    AudioBox.Instance.Play(sound);
+                }
+            // }
             if (_break && col.transform.TryGetComponent<BreakableObject>(out var breakableObject))
             {
                 breakableObject.Broke();

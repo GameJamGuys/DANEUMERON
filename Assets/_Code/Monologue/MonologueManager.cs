@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using _Code.Utils;
+using Audio;
 using UnityEngine;
 
 public class MonologueManager : MonoBehaviour
@@ -103,6 +104,7 @@ public class MonologueManager : MonoBehaviour
         {
             if (!_isAllText)
             {
+                AudioBox.Instance.Play("Type");
                 _monologueTrigger.MonologueField.text += letter;
                 yield return new WaitForSeconds(0.08f);
             }

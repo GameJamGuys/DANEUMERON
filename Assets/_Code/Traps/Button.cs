@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using _Code.Components;
+using Audio;
 using UnityEngine;
 
 namespace _Code.Traps
@@ -33,6 +34,7 @@ namespace _Code.Traps
 
         private void Select()
         {
+            AudioBox.Instance.Play("Btn");
             anim.Play("Down");
 
             foreach (var obj in objectsToInteraction)

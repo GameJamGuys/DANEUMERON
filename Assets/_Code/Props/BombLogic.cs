@@ -1,4 +1,5 @@
 using _Code.Gameloop.Triggers;
+using Audio;
 using UnityEngine;
 using TMPro;
 using Cysharp.Threading.Tasks;
@@ -30,6 +31,7 @@ namespace _Code
 
         public void LightUp(int timeToBoom = 5)
         {
+            AudioBox.Instance.Play("Fitil");
             boomTime = timeToBoom;
 
             fitil.SetActive(true);
@@ -49,6 +51,9 @@ namespace _Code
 
         async void Explode()
         {
+            
+            AudioBox.Instance.Stop("Fitil");
+            AudioBox.Instance.Play("Exp");
             explode.gameObject.SetActive(true);
             await UniTask.Delay(300);
             Destroy(gameObject);

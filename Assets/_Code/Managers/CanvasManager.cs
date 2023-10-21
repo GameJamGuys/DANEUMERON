@@ -31,14 +31,17 @@ public class CanvasManager : StaticInstance<CanvasManager>
         //LevelManager.Instance.OnLevelEnd -= ShowEndScreen;
     }
 
+    private Sequence seq;
+    
     private  void ShowEndScreen()
     {
-        
+        if (seq != null)
+            return;
         youDeathTmp.text = "";
         butTmp.text = "";
         background.color = new Color(0, 0, 0, 0);
         _endScreen.SetActive(true);
-        var seq = DOTween.Sequence();
+        seq = DOTween.Sequence();
         seq.AppendInterval(.5f);
         seq.Append(DOTween.ToAlpha(() => background.color, x => background.color = x, 1, .5f));
 
