@@ -70,5 +70,28 @@ namespace _Code.Traps
                 _currentDegree = _startDegree;
             }
         }
+
+        public void RotateOneTimeWithoutLoop(bool state)
+        {
+            //Проверка на активность твина
+            if (_currentTween is {active: true}) _currentTween.Kill();
+            
+            //Выбор текущего состояния
+            if (state)
+            {
+                _currentDegree = degree;
+            } else
+            {
+                _currentDegree = _startDegree;
+            }
+            
+            //Поворот по объекту по скорости
+            _currentTween = transformToRotation.DORotate(new Vector3(0, 0, _currentDegree), duration).SetEase(Ease.OutSine);
+        }
+
+        public void StopTween()
+        {
+            if (_currentTween is {active: true}) _currentTween.Kill();
+        }
     }
 }
