@@ -150,14 +150,14 @@ namespace TarodevController
             Jumped?.Invoke();
         }
 
-        public void TrampolineJump(float jumpPower)
+        public void TrampolineJump(Vector2 jumpPower)
         {
             
             _endedJumpEarly = false;
             _timeJumpWasPressed = 0;
             _bufferedJumpUsable = false;
             _coyoteUsable = false;
-            _frameVelocity.y = jumpPower;
+            _frameVelocity = jumpPower;
             Jumped?.Invoke();
         }
 
