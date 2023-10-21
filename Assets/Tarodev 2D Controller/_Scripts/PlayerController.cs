@@ -16,6 +16,7 @@ namespace TarodevController
     {
         
         [SerializeField] private ScriptableStats _stats;
+        public bool interactionEnable;
         private Rigidbody2D _rb;
         private CapsuleCollider2D _col;
         private FrameInput _frameInput;

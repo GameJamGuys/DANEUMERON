@@ -1,11 +1,12 @@
-﻿using _Code.Components;
+﻿using System.Collections.Generic;
+using _Code.Components;
 using UnityEngine;
 
 namespace _Code.Traps
 {
     public class Button : MonoBehaviour
     {
-        [SerializeField] private InteractionObject objectToInteraction;
+        [SerializeField] private List<InteractionObject> objectsToInteraction;
         [SerializeField] private Animator anim;
 
         private bool _isTwo;
@@ -34,15 +35,18 @@ namespace _Code.Traps
         {
             anim.Play("Down");
 
-            if (objectToInteraction != null)
-                if (_isSecondInteraction)
-                {
-                    objectToInteraction.SecondInteract();
-                }
-                else
-                {
-                    objectToInteraction.Interact();
-                }
+            foreach (var obj in objectsToInteraction)
+            {
+                if (obj != null)
+                    if (_isSecondInteraction)
+                    {
+                        obj.SecondInteract();
+                    }
+                    else
+                    {
+                        obj.Interact();
+                    }
+            }
         }
 
         private void Deselect()
@@ -51,13 +55,19 @@ namespace _Code.Traps
 
             if (_isTwo)
             {
-                objectToInteraction.ThirdInteract();
+                foreach (var obj in objectsToInteraction)
+                {
+                    obj.ThirdInteract();
+                }
             }
-            
+
             if (_isLoop)
             {
-                if (objectToInteraction != null)
-                    objectToInteraction.Interact();
+                foreach (var obj in objectsToInteraction)
+                {
+                    if (obj != null)
+                        obj.Interact();
+                }
             }
         }
 

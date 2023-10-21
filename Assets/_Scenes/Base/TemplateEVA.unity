@@ -933,6 +933,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5190581650300991194, guid: c156919fd90514540a07c013501e3828, type: 3}
   m_PrefabInstance: {fileID: 5852743187044141942}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6130252102551229878 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5629894831231630657, guid: d07f13946cfb68444ad8f2ee8232b1ab, type: 3}
+  m_PrefabInstance: {fileID: 97479195422274584}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f76cd53eebc04b32aeb57784dd929ea8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6284951202821228113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1108,8 +1119,32 @@ PrefabInstance:
       propertyPath: objectToInteraction
       value: 
       objectReference: {fileID: 6669978435356355309}
+    - target: {fileID: 3048545748106458965, guid: 511c6c9652ecc8a4f845f7165fe36cd2, type: 3}
+      propertyPath: objectsToInteraction.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3048545748106458965, guid: 511c6c9652ecc8a4f845f7165fe36cd2, type: 3}
+      propertyPath: objectsToInteraction.Array.data[0]
+      value: 
+      objectReference: {fileID: 6130252102551229878}
+    - target: {fileID: 3048545748106458965, guid: 511c6c9652ecc8a4f845f7165fe36cd2, type: 3}
+      propertyPath: objectsToInteraction.Array.data[1]
+      value: 
+      objectReference: {fileID: 6669978435356355309}
     - target: {fileID: 5481526675071487460, guid: 511c6c9652ecc8a4f845f7165fe36cd2, type: 3}
       propertyPath: objectToInteraction
+      value: 
+      objectReference: {fileID: 6669978435356355309}
+    - target: {fileID: 5481526675071487460, guid: 511c6c9652ecc8a4f845f7165fe36cd2, type: 3}
+      propertyPath: objectsToInteraction.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5481526675071487460, guid: 511c6c9652ecc8a4f845f7165fe36cd2, type: 3}
+      propertyPath: objectsToInteraction.Array.data[0]
+      value: 
+      objectReference: {fileID: 6130252102551229878}
+    - target: {fileID: 5481526675071487460, guid: 511c6c9652ecc8a4f845f7165fe36cd2, type: 3}
+      propertyPath: objectsToInteraction.Array.data[1]
       value: 
       objectReference: {fileID: 6669978435356355309}
     - target: {fileID: 6463437132737122316, guid: 511c6c9652ecc8a4f845f7165fe36cd2, type: 3}
