@@ -10,7 +10,7 @@ namespace _Code.Gameloop.Triggers
         [SerializeField] private float minForce = 1;
         [SerializeField] private float maxForce = 3;
 
-        private float _lastVelocity;
+        private Vector2 _lastVelocity;
         private void OnCollisionEnter2D(Collision2D col)
         {
             if (col.gameObject.TryGetComponent<Rigidbody2D>(out var rb))
@@ -18,12 +18,12 @@ namespace _Code.Gameloop.Triggers
                 
                 if (col.gameObject.TryGetComponent<PlayerController>(out var playerController))
                 {
-                    playerController.TrampolineJump(_lastVelocity*2);
+                    playerController.TrampolineJump(new Vector2(_lastVelocity.x,_lastVelocity.y*2) * transform.up);
                 }
                 else
                 {
                     // Debug.Log(-rb.velocity);
-                    rb.velocity = new Vector2(rb.velocity.x, _lastVelocity);
+                    rb.velocity = new Vector2(_lastVelocity.x,_lastVelocity.y) * transform.up;
                 }
             }
         }
@@ -32,8 +32,10 @@ namespace _Code.Gameloop.Triggers
         {
             if (col.TryGetComponent<Rigidbody2D>(out var rb))
             {
-                _lastVelocity = -rb.velocity.y;
-                _lastVelocity = Mathf.Clamp(_lastVelocity, minForce, maxForce);
+                _lastVelocity = -rb.velocity;
+                var x = Mathf.Clamp(_lastVelocity.x, minForce, maxForce);
+                var y = Mathf.Clamp(_lastVelocity.x, minForce, maxForce);
+                _lastVelocity = new Vector2(x,y);
                 _lastVelocity *= scale;
                 // Debug.Log(_lastVelocity);
             }
