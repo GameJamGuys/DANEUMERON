@@ -142,7 +142,7 @@ Transform:
   m_Children:
   - {fileID: 18036981658719353}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &4818774718211071223
 Rigidbody2D:
@@ -228,9 +228,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e72dbd8606e46249461db5bb78a5d09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  breakVelocity: 10
-  deadVelocity: 15
+  breakVelocity: 5
+  deadVelocity: 10
   deadTrigger: {fileID: 2981029522294067245}
+  _deadTime: 0
 --- !u!212 &9024942414352566484
 SpriteRenderer:
   m_ObjectHideFlags: 0
