@@ -7,7 +7,7 @@ namespace _Code
     public class BombLogic : MonoBehaviour
     {
         [SerializeField]
-        int boomTime = 5;
+        float boomTime = 5;
         [Space]
         [SerializeField]
         TMP_Text timeText;
@@ -32,10 +32,11 @@ namespace _Code
 
         async void StartCount()
         {
-            for (int i = boomTime - 1; i >= 0; i--)
+            boomTime -= 0.5f;
+            for (float i = boomTime; i >= 0; i-=0.5f)
             {
-                await UniTask.Delay(1000);
-                timeText.text = i.ToString();
+                await UniTask.Delay(500);
+                timeText.text = ((int)(i + 1)).ToString();
             }
             Explode();
         }
