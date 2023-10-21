@@ -42,56 +42,56 @@ public class CanvasManager : StaticInstance<CanvasManager>
         seq.AppendInterval(.5f);
         seq.Append(DOTween.ToAlpha(() => background.color, x => background.color = x, 1, .5f));
 
-        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Т", .15f).OnComplete(() =>
+        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Т", .15f).OnStart(() =>
         {
             AudioBox.Instance.Play("Type");
         }));
-        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Ты", .15f).OnComplete(() =>
+        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Ты", .15f).OnStart(() =>
         {
             AudioBox.Instance.Play("Type");
         }));
-        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Ты ", .15f).OnComplete(() =>
+        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Ты ", .15f).OnStart(() =>
         {
             AudioBox.Instance.Play("Type");
         }));
-        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Ты м", .15f).OnComplete(() =>
+        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Ты м", .15f).OnStart(() =>
         {
             AudioBox.Instance.Play("Type");
         }));
-        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Ты мё", .15f).OnComplete(() =>
+        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Ты мё", .15f).OnStart(() =>
         {
             AudioBox.Instance.Play("Type");
         }));
-        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Ты мёр", .15f).OnComplete(() =>
+        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Ты мёр", .15f).OnStart(() =>
         {
             AudioBox.Instance.Play("Type");
         }));
-        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Ты мёрт", .15f).OnComplete(() =>
+        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Ты мёрт", .15f).OnStart(() =>
         {
             AudioBox.Instance.Play("Type");
         }));
-        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Ты мёртв", .15f).OnComplete(() =>
+        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Ты мёртв", .15f).OnStart(() =>
         {
             AudioBox.Instance.Play("Type");
         }));
         seq.AppendInterval(.5f);
-        seq.Append(DOTween.To(() => butTmp.text, x => butTmp.text = x, "Н", .15f).OnComplete(() =>
+        seq.Append(DOTween.To(() => butTmp.text, x => butTmp.text = x, "Н", .15f).OnStart(() =>
         {
             AudioBox.Instance.Play("Type");
         }));
-        seq.Append(DOTween.To(() => butTmp.text, x => butTmp.text = x, "Но", .15f).OnComplete(() =>
+        seq.Append(DOTween.To(() => butTmp.text, x => butTmp.text = x, "Но", .15f).OnStart(() =>
         {
             AudioBox.Instance.Play("Type");
         }));
-        seq.Append(DOTween.To(() => butTmp.text, x => butTmp.text = x, "Но.", .15f).OnComplete(() =>
+        seq.Append(DOTween.To(() => butTmp.text, x => butTmp.text = x, "Но.", .15f).OnStart(() =>
         {
             AudioBox.Instance.Play("Type");
         }));
-        seq.Append(DOTween.To(() => butTmp.text, x => butTmp.text = x, "Но..", .15f).OnComplete(() =>
+        seq.Append(DOTween.To(() => butTmp.text, x => butTmp.text = x, "Но..", .15f).OnStart(() =>
         {
             AudioBox.Instance.Play("Type");
         }));
-        seq.Append(DOTween.To(() => butTmp.text, x => butTmp.text = x, "Но...", .15f).OnComplete(() =>
+        seq.Append(DOTween.To(() => butTmp.text, x => butTmp.text = x, "Но...", .15f).OnStart(() =>
         {
             AudioBox.Instance.Play("Type");
         }));

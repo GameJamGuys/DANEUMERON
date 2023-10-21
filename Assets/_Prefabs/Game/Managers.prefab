@@ -127,7 +127,7 @@ MonoBehaviour:
     source: {fileID: 0}
   sounds:
   - name: Type
-    clip: {fileID: 8300000, guid: aaa74011df71047c5b11d783ac76f2b0, type: 3}
+    clip: {fileID: 8300000, guid: 03c2e660cb6fcda4ab13ca37fa666f43, type: 3}
     volume: 1
     pitch: 1.11
     loop: 0

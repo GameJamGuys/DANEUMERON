@@ -7,6 +7,7 @@ namespace _Code
     public class DeadComponent : MonoBehaviour
     {
         [SerializeField] private PlayerAnimator anim;
+        [SerializeField] private GameObject death;
 
         private void Start()
         {
@@ -18,6 +19,7 @@ namespace _Code
         {
             print("Player dead");
             anim.OnDead();
+            death.gameObject.SetActive(true);
             LevelManager.Instance.EndLevel();
         }
 
