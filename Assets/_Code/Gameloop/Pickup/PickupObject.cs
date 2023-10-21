@@ -12,6 +12,8 @@ namespace _Code.Gameloop.Pickup
         [SerializeField] float deadVelocity = 15f;
         [SerializeField] private GameObject deadTrigger;
 
+        [SerializeField]private float deadTime = .1f;
+        private float _deadTime;
         private bool _break;
         private Collider2D _collider;
         private Rigidbody2D _rb;
@@ -35,20 +37,39 @@ namespace _Code.Gameloop.Pickup
             _enable = true;
             _rb.isKinematic = false;
             _rb.AddForce(force);
-            StartCoroutine(WaitAndEnableCollider(.01f));
+            _collider.enabled = true;
+            // StartCoroutine(WaitAndEnableCollider(.01f));
         }
 
-        IEnumerator WaitAndEnableCollider(float time)
+        // IEnumerator WaitAndEnableCollider(float time)
+        // {
+        //     yield return new WaitForSeconds(time);
+        //     _collider.enabled = true;
+        // }
+
+        private void Update()
         {
-            yield return new WaitForSeconds(time);
-            _collider.enabled = true;
-        }
-        
-        private void FixedUpdate()
-        {
+            
             _break = _rb.velocity.magnitude > breakVelocity;
-            deadTrigger.SetActive(_rb.velocity.magnitude > deadVelocity);
+            if (_rb.velocity.magnitude > deadVelocity)
+            {
+                // deadTrigger.SetActive(true);
+                _deadTime += Time.deltaTime;
+                if (_deadTime > deadTime && deadTrigger)
+                {
+                    deadTrigger.SetActive(true);
+                }
+            }
+            else
+            {
+                if (deadTrigger)
+                {
+                    _deadTime = 0;
+                    deadTrigger.SetActive(false);
+                }
+            }
         }
+
 
         private void OnCollisionEnter2D(Collision2D col)
         {
