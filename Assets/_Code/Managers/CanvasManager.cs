@@ -22,6 +22,7 @@ public class CanvasManager : StaticInstance<CanvasManager>
 
     private async void ShowEndScreen()
     {
+        await UniTask.Delay(400);
         _endScreen.SetActive(true);
         await UniTask.Delay(1000);
         SceneLoader.LoadNext();

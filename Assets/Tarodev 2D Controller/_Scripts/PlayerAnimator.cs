@@ -22,6 +22,7 @@ namespace TarodevController
         [SerializeField] private ParticleSystem _launchParticles;
         [SerializeField] private ParticleSystem _moveParticles;
         [SerializeField] private ParticleSystem _landParticles;
+        [SerializeField] private ParticleSystem _deadParticles;
 
         [Header("Audio Clips")] [SerializeField]
         private AudioClip[] _footsteps;
@@ -140,6 +141,7 @@ namespace TarodevController
         public void OnDead()
         {
             _anim.SetTrigger(DeadKey);
+            _deadParticles.Play();
         }
 
         private static readonly int GroundedKey = Animator.StringToHash("Grounded");
