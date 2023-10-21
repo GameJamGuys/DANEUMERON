@@ -332,6 +332,14 @@ PrefabInstance:
       propertyPath: secondInteractionAction.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7078596927169393155, guid: d07f13946cfb68444ad8f2ee8232b1ab, type: 3}
+      propertyPath: degree
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7078596927169393155, guid: d07f13946cfb68444ad8f2ee8232b1ab, type: 3}
+      propertyPath: duration
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7093725775013636250, guid: d07f13946cfb68444ad8f2ee8232b1ab, type: 3}
       propertyPath: m_Name
       value: RotationPlatformTwoButton
