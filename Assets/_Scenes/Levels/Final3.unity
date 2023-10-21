@@ -1286,6 +1286,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: RealWater
       objectReference: {fileID: 0}
+    - target: {fileID: 7860857918363986159, guid: 62fd23e258c620d41bf0707d33995582, type: 3}
+      propertyPath: m_Size.y
+      value: 2.7733216
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860857918363986159, guid: 62fd23e258c620d41bf0707d33995582, type: 3}
+      propertyPath: m_Offset.y
+      value: -7.7785425
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988877282636230284, guid: 62fd23e258c620d41bf0707d33995582, type: 3}
+      propertyPath: timeInSeconds
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1574,6 +1586,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3391041333617101506, guid: c156919fd90514540a07c013501e3828, type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5190581650300991194, guid: c156919fd90514540a07c013501e3828, type: 3}
       propertyPath: m_Name
       value: BestPlayerController
