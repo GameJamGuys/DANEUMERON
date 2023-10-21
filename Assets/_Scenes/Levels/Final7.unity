@@ -1843,6 +1843,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1501552868}
     - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
+      propertyPath: monologue.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: monologue.sentences.Array.data[0]
       value: "\u042D\u041A\u0421\u041F\u0415\u0420\u0418\u041C\u0415\u041D\u0422
         \u21167"
@@ -1854,7 +1858,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: monologue.sentences.Array.data[2]
-      value: 
+      value: "\u0418\u043B\u0438 \u0441\u043C\u0435\u0440\u0442\u044C?"
       objectReference: {fileID: 0}
     - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: monologue.sentences.Array.data[3]
