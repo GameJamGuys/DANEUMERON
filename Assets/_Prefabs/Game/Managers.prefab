@@ -26,13 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9114775556216704783}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8489348439195200044
 MonoBehaviour:
@@ -125,4 +125,12 @@ MonoBehaviour:
     fullPlay: 0
     unstop: 0
     source: {fileID: 0}
-  sounds: []
+  sounds:
+  - name: Type
+    clip: {fileID: 8300000, guid: aaa74011df71047c5b11d783ac76f2b0, type: 3}
+    volume: 1
+    pitch: 1.11
+    loop: 0
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
