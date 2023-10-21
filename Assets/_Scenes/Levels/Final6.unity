@@ -1409,6 +1409,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1306315815467154990, guid: 37cc25fc8c13b483683cc5153c27acb4, type: 3}
+      propertyPath: m_text
+      value: ///// LIFE 6 /////
+      objectReference: {fileID: 0}
+    - target: {fileID: 1306315815467154990, guid: 37cc25fc8c13b483683cc5153c27acb4, type: 3}
       propertyPath: m_fontSize
       value: 100
       objectReference: {fileID: 0}
