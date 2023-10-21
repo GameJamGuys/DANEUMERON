@@ -263,3 +263,11 @@ MonoBehaviour:
     fullPlay: 0
     unstop: 0
     source: {fileID: 0}
+  - name: DeathMusic
+    clip: {fileID: 8300000, guid: 6ac893d6057bdfa4fb8febb81d178f02, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
