@@ -1,10 +1,11 @@
+using _Code.Gameloop.Triggers;
 using UnityEngine;
 using TMPro;
 using Cysharp.Threading.Tasks;
 
 namespace _Code
 {
-    public class BombLogic : MonoBehaviour
+    public class BombLogic : Teleportable
     {
         [SerializeField]
         float boomTime = 5;
