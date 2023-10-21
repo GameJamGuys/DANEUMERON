@@ -12,7 +12,10 @@ namespace _Code.Gameloop.Triggers
 
         private void Awake()
         {
-            glare.DOMove(end.position, duration).SetLoops(-1);
+            var seq = DOTween.Sequence();
+            seq.Append(glare.DOMove(end.position, duration));
+            seq.AppendInterval(1);
+            seq.SetLoops(-1);
         }
 
         public void Broke()
