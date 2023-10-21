@@ -55,14 +55,18 @@ namespace _Code.Gameloop.Pickup
             {
                 // deadTrigger.SetActive(true);
                 _deadTime += Time.deltaTime;
-                if (_deadTime > deadTime)
+                if (_deadTime > deadTime && deadTrigger)
+                {
                     deadTrigger.SetActive(true);
+                }
             }
             else
             {
-                
-                _deadTime = 0;
-                deadTrigger.SetActive(false);
+                if (deadTrigger)
+                {
+                    _deadTime = 0;
+                    deadTrigger.SetActive(false);
+                }
             }
         }
 
