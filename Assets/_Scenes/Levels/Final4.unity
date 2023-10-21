@@ -1625,18 +1625,22 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1501552868}
     - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
+      propertyPath: monologue.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: monologue.sentences.Array.data[0]
-      value: "\u041D\u0410\u0427\u041D\u0401\u041C"
+      value: "\u042D\u041A\u0421\u041F\u0415\u0420\u0418\u041C\u0415\u041D\u0422
+        \u21164"
       objectReference: {fileID: 0}
     - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: monologue.sentences.Array.data[1]
-      value: "\u042D\u041A\u0421\u041F\u0415\u0420\u0418\u041C\u0415\u041D\u0422
-        \u21161"
+      value: "\u0412\u0440\u0435\u043C\u044F \u0440\u0430\u0437\u0431\u0440\u0430\u0441\u044B\u0432\u0430\u0442\u044C
+        \u0448\u0430\u043B\u043E\u0441\u0442\u0438"
       objectReference: {fileID: 0}
     - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: monologue.sentences.Array.data[2]
-      value: "\u041F\u041E\u0414\u041E\u041F\u042B\u0422\u041D\u042B\u0419 \u041D\u0410
-        \u041C\u0415\u0421\u0422\u0415"
+      value: "\u0418 \u0441\u043E\u0431\u0438\u0440\u0430\u0442\u044C \u0433\u0430\u0434\u043E\u0441\u0442\u0438"
       objectReference: {fileID: 0}
     - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: monologue.sentences.Array.data[3]
@@ -1713,7 +1717,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2316344047785974590, guid: 3070c88685c7e458ca19d438840dc9e2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 425
+      value: 237
       objectReference: {fileID: 0}
     - target: {fileID: 4075076395236051036, guid: 3070c88685c7e458ca19d438840dc9e2, type: 3}
       propertyPath: m_Pivot.x
