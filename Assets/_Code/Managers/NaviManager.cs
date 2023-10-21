@@ -8,13 +8,8 @@ namespace Core.Managers
     public class NaviManager : MonoBehaviour
     {
         [SerializeField]
-        private int _numberOfLevels = 1;
-        private int _level;
+        private bool lastLevel;
 
-        private void Start()
-        {
-            _level = SceneLoader.GetScene();
-        }
 
         public void BackToMenu()
         {
@@ -28,7 +23,7 @@ namespace Core.Managers
 
         public void NextLevel()
         {
-            if (_level == _numberOfLevels)
+            if (lastLevel)
                 BackToMenu();
             else
                 SceneLoader.LoadNext();
