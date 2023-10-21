@@ -12,6 +12,8 @@ namespace _Code.Gameloop.Pickup
         [SerializeField] private float distanceDetection = 1f;
         [SerializeField] private SpriteRenderer flipRenderer;
         [SerializeField] private Vector2 dropForce = new Vector2(25000,25000);
+        [SerializeField] private GameObject eButton;
+        private bool _interactionEnable;
         
         private PickupObject _currentPickUpObject;
         private PickupObject _currentDetectionObject;
@@ -21,7 +23,8 @@ namespace _Code.Gameloop.Pickup
         
         private void FixedUpdate()
         {
-            CheckPickup();
+            // if (_interactionEnable)
+                CheckPickup();
         }
 
         void CheckPickup()
@@ -33,13 +36,21 @@ namespace _Code.Gameloop.Pickup
             {
                 if (hit.transform.TryGetComponent<PickupObject>(out var pickupObject))
                 {
+                    SetEButton(true);
                     _currentDetectionObject = pickupObject;
                 }
                 else
+                {
+                    
+                    SetEButton(false);
                     _currentDetectionObject = null;
+                }
             }
             else
+            {
+                SetEButton(false);
                 _currentDetectionObject = null;
+            }
         }
 
         private void OnDrawGizmos()
@@ -62,6 +73,10 @@ namespace _Code.Gameloop.Pickup
             }
         }
 
+        public void SetEButton(bool enable)
+        {
+            eButton.gameObject.SetActive(enable);
+        }
         public void PickUp()
         {
             if (_currentDetectionObject == null)
