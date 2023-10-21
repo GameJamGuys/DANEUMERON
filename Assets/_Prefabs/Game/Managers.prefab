@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1688260579601405503}
   - component: {fileID: 8489348439195200044}
   - component: {fileID: 4919913196305175872}
+  - component: {fileID: 3242214201920951138}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -45,6 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38c6fdf246b12490d87c4d403b34b3aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _numberOfLevels: 9
 --- !u!114 &4919913196305175872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,3 +59,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28504283a892a42a1b9ca7051f0b3915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3242214201920951138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9114775556216704783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6c45b144002c4e079cb5ea6fb4bf65b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings:
+    isSound: 1
+    isMusic: 1
+    MusicVolume: 0
+    SoundVolume: 0
+  musics:
+  - name: m1
+    clip: {fileID: 8300000, guid: cde9dfb5b5981460394c50b7ba1d7ffb, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
+  - name: m2
+    clip: {fileID: 8300000, guid: d786a9047d19f4b54a8dfd0b5029627c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
+  - name: m3
+    clip: {fileID: 8300000, guid: db019c2f742fe476c8a12ab4ab101fc0, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
+  - name: m4
+    clip: {fileID: 8300000, guid: 7881bcf5c5d9d43f2b2434a8a1f23526, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
+  - name: m5
+    clip: {fileID: 8300000, guid: fe2997450bd614e7d80a9cb627651104, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
+  - name: mF
+    clip: {fileID: 8300000, guid: 24019a4c022d442eeae012e1dfcb0b4c, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    fullPlay: 0
+    unstop: 0
+    source: {fileID: 0}
+  sounds: []
