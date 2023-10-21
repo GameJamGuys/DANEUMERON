@@ -68,5 +68,31 @@ namespace _Code.Traps
                 _currentPoint = firstPoint;
             }
         }
+
+        public void RotateOneTimeWithoutLoop(bool state)
+        {
+            //Проверка на активность твина
+            if (_currentTween is {active: true}) _currentTween.Kill();
+
+            //Выбор текущего состояния
+            if (state)
+            {
+                _currentPoint = firstPoint;
+            }
+            else
+            {
+                _currentPoint = secondPoint;
+            }
+
+            //Движение к текущей точке по скорости
+            var distance = Vector3.Distance(transformToMove.position, _currentPoint.position);
+            var duration = (distance / speed);
+            _currentTween = transformToMove.DOMove(_currentPoint.position, duration).SetEase(Ease.OutSine);
+        }
+
+        public void StopTween()
+        {
+            if (_currentTween is {active: true}) _currentTween.Kill();
+        }
     }
 }

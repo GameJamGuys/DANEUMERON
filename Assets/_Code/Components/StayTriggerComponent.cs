@@ -1,4 +1,5 @@
 using System;
+using TarodevController;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -6,7 +7,7 @@ namespace _Code.Components
 {
     public class StayTriggerComponent : MonoBehaviour
     {
-        [SerializeField] private new string tag;
+        // [SerializeField] private new string tag;
         [SerializeField] private GameObjectChange actionStay;
 
         public string Tag
@@ -23,7 +24,8 @@ namespace _Code.Components
 
         private void OnTriggerStay2D(Collider2D other)
         {
-            if (other.gameObject.CompareTag(tag))
+            
+            if (other.TryGetComponent<PlayerController>(out var player))
             {
                 actionStay?.Invoke(other.gameObject);
             }
