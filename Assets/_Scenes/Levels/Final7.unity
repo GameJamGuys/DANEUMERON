@@ -1723,21 +1723,21 @@ PrefabInstance:
       objectReference: {fileID: 1501552868}
     - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: monologue.sentences.Array.data[0]
-      value: "\u041D\u0410\u0427\u041D\u0401\u041C"
+      value: "\u042D\u041A\u0421\u041F\u0415\u0420\u0418\u041C\u0415\u041D\u0422
+        \u21167"
       objectReference: {fileID: 0}
     - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: monologue.sentences.Array.data[1]
-      value: "\u042D\u041A\u0421\u041F\u0415\u0420\u0418\u041C\u0415\u041D\u0422
-        \u21161"
+      value: "\u0414\u0432\u0438\u0436\u0435\u043D\u0438\u0435 \u044D\u0442\u043E
+        \u0436\u0438\u0437\u043D\u044C\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: monologue.sentences.Array.data[2]
-      value: "\u041F\u041E\u0414\u041E\u041F\u042B\u0422\u041D\u042B\u0419 \u041D\u0410
-        \u041C\u0415\u0421\u0422\u0415"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: monologue.sentences.Array.data[3]
-      value: "\u0418\u0414\u0401\u0422 \u0410\u041D\u0410\u041B\u0418\u0417"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3559073757922606101, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: m_Name
@@ -1809,8 +1809,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2316344047785974590, guid: 3070c88685c7e458ca19d438840dc9e2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2316344047785974590, guid: 3070c88685c7e458ca19d438840dc9e2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 425
+      value: 268
       objectReference: {fileID: 0}
     - target: {fileID: 4075076395236051036, guid: 3070c88685c7e458ca19d438840dc9e2, type: 3}
       propertyPath: m_Pivot.x
@@ -1900,6 +1904,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1978076457}
+    - target: {fileID: 8184941037857121253, guid: 3070c88685c7e458ca19d438840dc9e2, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

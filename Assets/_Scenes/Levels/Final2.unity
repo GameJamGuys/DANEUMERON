@@ -1414,21 +1414,23 @@ PrefabInstance:
       objectReference: {fileID: 1501552868}
     - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: monologue.sentences.Array.data[0]
-      value: "\u041D\u0410\u0427\u041D\u0401\u041C"
+      value: "\u042D\u041A\u0421\u041F\u0415\u0420\u0418\u041C\u0415\u041D\u0422
+        \u21162"
       objectReference: {fileID: 0}
     - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: monologue.sentences.Array.data[1]
-      value: "\u042D\u041A\u0421\u041F\u0415\u0420\u0418\u041C\u0415\u041D\u0422
-        \u21161"
+      value: "\u0427\u0435\u043C \u043C\u044B \u0441\u0445\u043E\u0436\u0438, \u043D\u043E
+        \u0438 \u043E\u0442\u043B\u0438\u0447\u0430\u0435\u043C\u0441\u044F?\u0422\u043E
+        \u0447\u0442\u043E \u043C\u044B \u043B\u0435\u043D\u0438\u0432\u044B, \u043D\u043E
+        \u044F \u0441\u043E\u0432\u0435\u0440\u0448\u0435\u043D\u043D\u0435\u043D"
       objectReference: {fileID: 0}
     - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: monologue.sentences.Array.data[2]
-      value: "\u041F\u041E\u0414\u041E\u041F\u042B\u0422\u041D\u042B\u0419 \u041D\u0410
-        \u041C\u0415\u0421\u0422\u0415"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: monologue.sentences.Array.data[3]
-      value: "\u0418\u0414\u0401\u0422 \u0410\u041D\u0410\u041B\u0418\u0417"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3559073757922606101, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: m_Name
@@ -1692,8 +1694,8 @@ SceneRoots:
   - {fileID: 4202686973951074372}
   - {fileID: 5852743187044141942}
   - {fileID: 1727136115}
-  - {fileID: 7812376733781906578}
   - {fileID: 1139168698}
+  - {fileID: 7812376733781906578}
   - {fileID: 1506126177}
   - {fileID: 6479145264054670104}
   - {fileID: 1333903474}
