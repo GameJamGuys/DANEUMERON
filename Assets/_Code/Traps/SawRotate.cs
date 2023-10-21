@@ -4,15 +4,46 @@ using UnityEngine;
 
 public class SawRotate : MonoBehaviour
 {
-    [SerializeField]
-    bool isRotate;
+    [SerializeField] private CircleCollider2D collider2D;
 
-    [SerializeField]
-    float rotateSpeed;
+    [SerializeField] bool isRotate;
+
+    [SerializeField] float rotateSpeed;
+
+    [SerializeField] private bool isOn;
 
     void Update()
     {
         if (isRotate)
+        {
+            isOn = true;
             transform.Rotate(Vector3.forward, rotateSpeed);
+        }
+    }
+
+    public void OnSaw()
+    {
+        isRotate = true;
+        collider2D.enabled = true;
+    }
+
+    public void OffSaw()
+    {
+        isRotate = false;
+        collider2D.enabled = false;
+    }
+
+    public void ChangeSawState()
+    {
+        if (isOn)
+        {
+            isOn = false;
+            OffSaw();
+        }
+        else
+        {
+            isOn = true;
+            OnSaw();
+        }
     }
 }
