@@ -1,0 +1,96 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using DG.Tweening;
+using TMPro;
+using Tools;
+using UnityEngine.UI;
+
+public class FinalCanvas : MonoBehaviour
+{
+    [SerializeField]
+    private GameObject _endScreen;
+
+    [SerializeField] private AudioSource audioSource;
+
+    [SerializeField] private TextMeshProUGUI youDeathTmp;
+    [SerializeField] private TextMeshProUGUI butTmp;
+
+    void Start()
+    {
+        LevelManager.Instance.OnLevelEnd += ShowEndScreen;
+
+    }
+
+    private void ShowEndScreen()
+    {
+        if (seq != null)
+            return;
+
+        youDeathTmp.text = "";
+        butTmp.text = "";
+        _endScreen.SetActive(true);
+        seq = DOTween.Sequence();
+        seq.AppendInterval(.5f);
+        seq.Append(DOTween.ToAlpha(() => background.color, x => background.color = x, 1, .5f));
+
+        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Д", .1f).OnStart(() =>
+        {
+            AudioBox.Instance.Play("Type");
+        }));
+        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Да", .1f).OnStart(() =>
+        {
+            AudioBox.Instance.Play("Type");
+        }));
+        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Ты ", .15f).OnStart(() =>
+        {
+            AudioBox.Instance.Play("Type");
+        }));
+        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Ты м", .15f).OnStart(() =>
+        {
+            AudioBox.Instance.Play("Type");
+        }));
+        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Ты мё", .15f).OnStart(() =>
+        {
+            AudioBox.Instance.Play("Type");
+        }));
+        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Ты мёр", .15f).OnStart(() =>
+        {
+            AudioBox.Instance.Play("Type");
+        }));
+        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "Ты мёрт", .15f).OnStart(() =>
+        {
+            AudioBox.Instance.Play("Type");
+        }));
+        seq.Append(DOTween.To(() => youDeathTmp.text, x => youDeathTmp.text = x, "ДА НЕ УМЕР ОН", .15f).OnStart(() =>
+        {
+            AudioBox.Instance.Play("Type");
+        }));
+        seq.AppendInterval(.5f);
+        seq.Append(DOTween.To(() => butTmp.text, x => butTmp.text = x, "Н", .15f).OnStart(() =>
+        {
+            AudioBox.Instance.Play("Type");
+        }));
+        seq.Append(DOTween.To(() => butTmp.text, x => butTmp.text = x, "Но", .15f).OnStart(() =>
+        {
+            AudioBox.Instance.Play("Type");
+        }));
+        seq.Append(DOTween.To(() => butTmp.text, x => butTmp.text = x, "Но.", .15f).OnStart(() =>
+        {
+            AudioBox.Instance.Play("Type");
+        }));
+        seq.Append(DOTween.To(() => butTmp.text, x => butTmp.text = x, "Но..", .15f).OnStart(() =>
+        {
+            AudioBox.Instance.Play("Type");
+        }));
+        seq.Append(DOTween.To(() => butTmp.text, x => butTmp.text = x, "Но...", .15f).OnStart(() =>
+        {
+            AudioBox.Instance.Play("Type");
+        }));
+
+        seq.AppendInterval(.3f).OnComplete(() =>
+        {
+            SceneLoader.LoadNext();
+        });
+    }
+}

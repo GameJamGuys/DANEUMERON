@@ -17,13 +17,10 @@ public class CanvasManager : StaticInstance<CanvasManager>
     [SerializeField] private Image background;
     [SerializeField] private TextMeshProUGUI youDeathTmp;
     [SerializeField] private TextMeshProUGUI butTmp;
-    [SerializeField] private AudioSource audioSource;
-    [SerializeField] private AudioClip clip;
 
     private void Start()
     {
         LevelManager.Instance.OnLevelEnd += ShowEndScreen;
-        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnDisable()
