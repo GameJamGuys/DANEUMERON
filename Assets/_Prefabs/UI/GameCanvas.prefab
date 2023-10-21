@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20, y: 432}
-  m_SizeDelta: {x: 808.62, y: 108.58}
+  m_AnchoredPosition: {x: 16.02, y: 432.99}
+  m_SizeDelta: {x: 920.02, y: 110.57}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1674058411585358094
 CanvasRenderer:
@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -67,10 +67,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: fc01c7167cfa44c1dbb608552b489712, type: 3}
-    m_FontSize: 14
+    m_FontSize: 50
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
+    m_BestFit: 0
+    m_MinSize: 0
     m_MaxSize: 100
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -338,17 +338,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: YOU DEAD
+  m_text: "\u0422\u042B \u041C\u0415\u0420\u0422\u0412"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dcd42ea6748244866831f31bec2a5c00, type: 2}
-  m_sharedMaterial: {fileID: -6101091639072265073, guid: dcd42ea6748244866831f31bec2a5c00, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8ac9c8f8e6ebd4884a2b3f077ea9cde2, type: 2}
+  m_sharedMaterial: {fileID: -286196999413772173, guid: 8ac9c8f8e6ebd4884a2b3f077ea9cde2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282203611
-  m_fontColor: {r: 0.8584906, g: 0.23891956, b: 0.23891956, a: 1}
+    rgba: 4279374562
+  m_fontColor: {r: 0.8867924, g: 0.071110725, b: 0.071110725, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -472,7 +472,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: but...
+  m_text: "\u041D\u041E..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8ac9c8f8e6ebd4884a2b3f077ea9cde2, type: 2}
   m_sharedMaterial: {fileID: -286196999413772173, guid: 8ac9c8f8e6ebd4884a2b3f077ea9cde2, type: 2}
