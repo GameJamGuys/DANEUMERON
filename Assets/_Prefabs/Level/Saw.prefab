@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6124463972816039065}
   - component: {fileID: 8596837957747517129}
   - component: {fileID: 3478979666030999399}
+  - component: {fileID: 7036003139440290534}
   m_Layer: 0
   m_Name: Saw
   m_TagString: Untagged
@@ -134,7 +135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4203ac5c6d6a5ce409429480e9282abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tag: 
   action:
     m_PersistentCalls:
       m_Calls: []
@@ -151,3 +151,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   touchingTag: Player
+--- !u!114 &7036003139440290534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2677138903868642273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5f71dc4978334971a332d237c6adc6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRotate: 1
+  rotateSpeed: 10

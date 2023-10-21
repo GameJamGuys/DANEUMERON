@@ -9,6 +9,8 @@ namespace _Code
     {
         [SerializeField]
         public float boomTime = 5;
+        [SerializeField]
+        bool autoLight = false;
         [Space]
         [SerializeField]
         TMP_Text timeText;
@@ -21,6 +23,9 @@ namespace _Code
         {
             timeText.text = ((int)boomTime).ToString();
             fitil.SetActive(false);
+
+            if (autoLight)
+                LightUp();
         }
 
         public void LightUp(int timeToBoom = 5)
