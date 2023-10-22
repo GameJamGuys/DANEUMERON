@@ -17,7 +17,6 @@ public class MonologueManager : MonoBehaviour
     private string _currentSentence;
 
     private Cooldown _cooldown;
-    private bool _isVoiceSound;
 
     private static readonly int IsEndMonologueAnim = Animator.StringToHash("is-end");
 
@@ -65,13 +64,12 @@ public class MonologueManager : MonoBehaviour
         _allowedShowNext = true;
     }
 
-    public void StartMonologue(MonologueTrigger monologueTrigger, bool voice = true)
+    public void StartMonologue(MonologueTrigger monologueTrigger)
     {
         _isAllText = false;
         _isMonologue = true;
 
         _monologueTrigger = monologueTrigger;
-        _isVoiceSound = voice;
 
         _sentences.Clear();
 
@@ -106,9 +104,7 @@ public class MonologueManager : MonoBehaviour
         {
             if (!_isAllText)
             {
-                if(_isVoiceSound)
-                    AudioBox.Instance.Play("Type");
-
+                AudioBox.Instance.Play("Type");
                 _monologueTrigger.MonologueField.text += letter;
                 yield return new WaitForSeconds(0.05f);
             }

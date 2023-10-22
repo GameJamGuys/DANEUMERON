@@ -12,8 +12,15 @@ namespace Core.Managers
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.R))
                 ReloadLevel();
+
+            if (Input.GetKeyDown(KeyCode.RightBracket))
+                NextLevel();
+
+            if (Input.GetKeyDown(KeyCode.LeftBracket))
+                SceneLoader.LoadPrev();
+
         }
 
         public void BackToMenu()
