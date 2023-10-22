@@ -1413,24 +1413,31 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1501552868}
     - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
+      propertyPath: monologue.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: monologue.sentences.Array.data[0]
       value: "\u042D\u041A\u0421\u041F\u0415\u0420\u0418\u041C\u0415\u041D\u0422
         \u21162"
       objectReference: {fileID: 0}
     - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: monologue.sentences.Array.data[1]
-      value: "\u0427\u0435\u043C \u043C\u044B \u0441\u0445\u043E\u0436\u0438, \u043D\u043E
-        \u0438 \u043E\u0442\u043B\u0438\u0447\u0430\u0435\u043C\u0441\u044F?\u0422\u043E
-        \u0447\u0442\u043E \u043C\u044B \u043B\u0435\u043D\u0438\u0432\u044B, \u043D\u043E
-        \u044F \u0441\u043E\u0432\u0435\u0440\u0448\u0435\u043D\u043D\u0435\u043D"
+      value: "\u042D\u0442\u043E \u0434\u043E\u043B\u0436\u043D\u043E \u0431\u044B\u0442\u044C
+        \u043F\u0440\u043E\u0441\u0442\u043E"
       objectReference: {fileID: 0}
     - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: monologue.sentences.Array.data[2]
-      value: 
+      value: "\u0412\u0438\u0436\u0443 \u043F\u0440\u043E\u0431\u043B\u0435\u0441\u043A\u0438
+        \u0438\u043D\u0442\u0435\u043B\u043B\u0435\u043A\u0442\u0430"
       objectReference: {fileID: 0}
     - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: monologue.sentences.Array.data[3]
-      value: 
+      value: "\u041D\u043E \u044F \u0441\u043E\u0432\u0435\u0440\u0448\u0435\u043D\u0435\u043D"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274279471817754676, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
+      propertyPath: monologue.sentences.Array.data[4]
+      value: "\u041D\u043E \u044F \u0441\u043E\u0432\u0435\u0440\u0448\u0435\u043D\u0435\u043D"
       objectReference: {fileID: 0}
     - target: {fileID: 3559073757922606101, guid: 0f61c1ca6fd56c24485597c1b0b12590, type: 3}
       propertyPath: m_Name
