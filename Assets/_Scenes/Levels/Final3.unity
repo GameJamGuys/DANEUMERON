@@ -1021,6 +1021,10 @@ PrefabInstance:
       value: 0.9439609
       objectReference: {fileID: 0}
     - target: {fileID: 4356146100951973984, guid: d73658db7293f455598255b26d8e64db, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: d302086586fde46b29a1641481ff82ef, type: 2}
+    - target: {fileID: 4356146100951973984, guid: d73658db7293f455598255b26d8e64db, type: 3}
       propertyPath: m_Offset.x
       value: -0.014009714
       objectReference: {fileID: 0}
@@ -1613,6 +1617,10 @@ PrefabInstance:
     - target: {fileID: 3391041333617101506, guid: c156919fd90514540a07c013501e3828, type: 3}
       propertyPath: m_SortingOrder
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4289401794508919633, guid: c156919fd90514540a07c013501e3828, type: 3}
+      propertyPath: m_Color.a
+      value: 0.98039216
       objectReference: {fileID: 0}
     - target: {fileID: 5190581650300991194, guid: c156919fd90514540a07c013501e3828, type: 3}
       propertyPath: m_Name
