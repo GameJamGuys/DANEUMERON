@@ -7,9 +7,6 @@ namespace Core.Managers
 {
     public class NaviManager : MonoBehaviour
     {
-        [SerializeField]
-        private bool lastLevel;
-
         private void Update()
         {
             if (Input.GetKeyDown(KeyCode.R))
@@ -25,7 +22,8 @@ namespace Core.Managers
 
         public void BackToMenu()
         {
-            SceneLoader.Load(0);
+            print("Load Menu");
+            SceneLoader.Load("Menu");
         }
 
         public void ReloadLevel()
@@ -35,10 +33,7 @@ namespace Core.Managers
 
         public void NextLevel()
         {
-            if (lastLevel)
-                BackToMenu();
-            else
-                SceneLoader.LoadNext();
+            SceneLoader.LoadNext();
         }
     }
 }

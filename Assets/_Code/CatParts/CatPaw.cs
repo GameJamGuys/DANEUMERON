@@ -5,15 +5,15 @@ using Cysharp.Threading.Tasks;
 
 public class CatPaw : MonoBehaviour
 {
-    [SerializeField]
-    float minAngle = -50, maxAngle = -20;
+    //[SerializeField]
+    //float minAngle = -50, maxAngle = -20;
 
     float newAngle;
     bool isUp;
 
     void Start()
     {
-        newAngle = minAngle;
+        newAngle = 0;
         isUp = true;
         ToAngle();
     }
