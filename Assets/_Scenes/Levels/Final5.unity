@@ -493,6 +493,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Saw
       objectReference: {fileID: 0}
+    - target: {fileID: 2677138903868642273, guid: 5ea80206e0d08411d97cb8c19252d417, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3161309183452637398, guid: 5ea80206e0d08411d97cb8c19252d417, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -557,6 +561,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7036003139440290534, guid: 5ea80206e0d08411d97cb8c19252d417, type: 3}
+      propertyPath: coll2D
+      value: 
+      objectReference: {fileID: 512315678}
     - target: {fileID: 7036003139440290534, guid: 5ea80206e0d08411d97cb8c19252d417, type: 3}
       propertyPath: isRotate
       value: 0
